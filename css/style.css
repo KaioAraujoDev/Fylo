@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;800&family=Raleway:wght@400;700&family=Space+Grotesk:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(229deg, 57%, 11%);
+}
+
+main {
+  background: url("/assets/img/bg-desktop.png") no-repeat bottom;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  background: hsl(228deg, 56%, 26%);
+}
+
+.sectionLogo {
+  padding: 3em 2em;
+  width: 20em;
+}
+.sectionLogo .divLogo {
+  margin-bottom: 2em;
+}
+.sectionLogo .divLogo img {
+  width: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */
