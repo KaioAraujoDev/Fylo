@@ -34,12 +34,53 @@ section{
 }
 
 .sectionLogo{
-    padding: 3em 2em;
-    width: 20em;
+    padding: 2em;
+    border-radius: 1em 5em 1em 1em;
+    width: 17.5em;
+    margin-right: 5em;
     .divLogo{
         margin-bottom: 2em;
     }
     .divLogo img{
         width: 50%;
+    }
+    .divInputFiles input{
+        display: none;
+    }
+    .divInputFiles label{
+        background-color: $very-dark-blue;
+        color: #fff;
+        padding: .5em 2em;
+        border-radius: .25em;
+    }
+}
+
+.sectionProgress{
+    padding: 1.5em;
+    border-radius: .5em;
+    width: 25em;
+    .labelValue{
+        color: #fff;
+    }
+    .labelValue strong{
+        margin: 0 .25em;
+    }
+    .divProgress{
+        margin:.5em 0;
+    }
+    .divProgress div{
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        font-weight: bold;
+        font-size: .85em;
+    }
+    .divProgress progress{
+        width: 100%;
+    }
+    .divProgress progress::-webkit-progress-bar,
+    .divProgress progress::-moz-progress-bar
+    {
+        background-color: green;
     }
 }

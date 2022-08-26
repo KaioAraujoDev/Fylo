@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fylo</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
@@ -14,22 +14,24 @@
                 <img src="assets/svg/logo.svg" alt="Logo">
             </div>
             <div class="divInputFiles">
-                <img src="assets/svg/icon-document.svg" alt="Document">
+                <!-- <img src="assets/svg/icon-document.svg" alt="Document">
                 <img src="assets/svg/icon-folder.svg" alt="Folder"/>
-                <img src="assets/svg/icon-upload.svg" alt="Upload"/>
+                <img src="assets/svg/icon-upload.svg" alt="Upload"/> -->
+                <label for="arquivo">Escolha um arquivo</label>
+                <input class="inputFile"type="file" name="arquivo" id="arquivo">
             </div>
         </section>
         <section class="sectionProgress">
             <label class="labelValue">
-                You've used<strong><output></output>GB</strong>
+                You've used<strong><output>10</output>MB</strong>
                 of your storage
             </label>
             
             <div class="divProgress">
-                <progress></progress>
+                <progress value="30" max="100"></progress>
                 <div>
-                    <label >0 GB</label>
-                    <label >1000 GB</label>
+                    <label >0 MB</label>
+                    <label >100 MB</label>
                 </div>
             </div>
         </section>

@@ -29,14 +29,54 @@ section {
 }
 
 .sectionLogo {
-  padding: 3em 2em;
-  width: 20em;
+  padding: 2em;
+  border-radius: 1em 5em 1em 1em;
+  width: 17.5em;
+  margin-right: 5em;
 }
 .sectionLogo .divLogo {
   margin-bottom: 2em;
 }
 .sectionLogo .divLogo img {
   width: 50%;
+}
+.sectionLogo .divInputFiles input {
+  display: none;
+}
+.sectionLogo .divInputFiles label {
+  background-color: hsl(229deg, 57%, 11%);
+  color: #fff;
+  padding: 0.5em 2em;
+  border-radius: 0.25em;
+}
+
+.sectionProgress {
+  padding: 1.5em;
+  border-radius: 0.5em;
+  width: 25em;
+}
+.sectionProgress .labelValue {
+  color: #fff;
+}
+.sectionProgress .labelValue strong {
+  margin: 0 0.25em;
+}
+.sectionProgress .divProgress {
+  margin: 0.5em 0;
+}
+.sectionProgress .divProgress div {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.85em;
+}
+.sectionProgress .divProgress progress {
+  width: 100%;
+}
+.sectionProgress .divProgress progress::-webkit-progress-bar,
+.sectionProgress .divProgress progress::-moz-progress-bar {
+  background-color: green;
 }
 
 /*# sourceMappingURL=style.css.map */
