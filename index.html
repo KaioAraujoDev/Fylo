@@ -17,7 +17,7 @@
                 <!-- <img src="assets/svg/icon-document.svg" alt="Document">
                 <img src="assets/svg/icon-folder.svg" alt="Folder"/>
                 <img src="assets/svg/icon-upload.svg" alt="Upload"/> -->
-                <label for="arquivo">Escolha um arquivo</label>
+                <label id="labelInput" for="arquivo">Escolha um arquivo</label>
                 <input class="inputFile"type="file" name="arquivo" id="arquivo">
             </div>
         </section>
@@ -28,7 +28,7 @@
             </label>
             
             <div class="divProgress">
-                <progress value="30" max="100"></progress>
+                <progress id="progress" value="0" max="100"></progress>
                 <div>
                     <label >0 MB</label>
                     <label >100 MB</label>
@@ -37,5 +37,6 @@
         </section>
     
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
