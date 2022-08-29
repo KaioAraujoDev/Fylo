@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@300;600;800&family=Raleway:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     vertical-align: baseline;
 }
@@ -10,44 +11,49 @@ $pale-blue: hsl(243, 100%, 93%);
 $grayish-blue: hsl(229, 7%, 55%);
 $dark-blue: hsl(228, 56%, 26%);
 $very-dark-blue: hsl(229, 57%, 11%);
-   
 
-body{
+
+body {
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
     width: 100vw;
     height: 100vh;
     background-color: $very-dark-blue;
 }
-main{
-   background: url("../assets/img/bg-desktop.png") no-repeat bottom ;
-   background-size: contain;
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+
+main {
+    background: url("../assets/img/bg-desktop.png") no-repeat bottom;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-section{
+section {
     background: hsl(228, 56%, 26%);
 }
 
-.sectionLogo{
+.sectionLogo {
     padding: 2em;
     border-radius: 1em 5em 1em 1em;
     width: 17.5em;
     margin-right: 5em;
-    .divLogo{
+
+    .divLogo {
         margin-bottom: 2em;
     }
-    .divLogo img{
+
+    .divLogo img {
         width: 50%;
     }
-    .divInputFiles input{
+
+    .divInputFiles input {
         display: none;
     }
-    .divInputFiles label{
+
+    .divInputFiles label {
         background-color: $very-dark-blue;
         color: #fff;
         padding: .5em 2em;
@@ -56,20 +62,25 @@ section{
     }
 }
 
-.sectionProgress{
+.sectionProgress {
     padding: 1.5em;
     border-radius: .5em;
     width: 25em;
-    .labelValue{
+    position: relative;
+
+    .labelValue {
         color: #fff;
     }
-    .labelValue strong{
+
+    .labelValue strong {
         margin: 0 .25em;
     }
-    .divProgress{
-        margin-top:1em;
+
+    .divProgress {
+        margin-top: 1em;
     }
-    .divProgress div{
+
+    .divProgress div {
         display: flex;
         justify-content: space-between;
         color: #fff;
@@ -77,13 +88,41 @@ section{
         font-size: .85em;
         margin-top: .5em;
     }
-    .divProgress progress{
+
+    .divProgress progress {
         width: 100%;
         background-color: yellow;
         -webkit-appearance: none;
         border-radius: 1em;
     }
-    .divProgress progress::-webkit-progress-value{
-        background: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+
+    .divProgress progress::-webkit-progress-value {
+        background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     }
+}
+
+/**Exibição de card com valor restante de memória**/
+
+.divRestante {
+    background-color: #fff;
+    padding: .75em;
+    position: absolute;
+    border-radius: .75em .75em 0 .75em;
+    border: 1px solid black;
+    top: -30%;
+    right: 10%;
+}
+
+.divRestante::after {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    bottom: -25.5%;
+    right: 2%;
+    background: #fff;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    transform:rotate(42deg);
+
 }
