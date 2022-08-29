@@ -105,21 +105,31 @@ section {
 
 .divRestante {
     background-color: #fff;
-    padding: .75em;
+    padding: .75em 1em;
+    display: none;
     position: absolute;
     border-radius: .75em .75em 0 .75em;
     border: 1px solid black;
-    top: -30%;
-    right: 10%;
+    top: -40%;
+    right: 5%;
+    strong output{
+        font-size: 2em;
+    }
+    span{
+        font-size: .85em;
+        color: $grayish-blue;
+    }
 }
-
+.visible{
+    display: block;
+}
 .divRestante::after {
     content: '';
     position: absolute;
     width: 1.25em;
     height: 1.25em;
-    bottom: -25.5%;
-    right: 2%;
+    bottom: -18.5%;
+    right: 1.5%;
     background: #fff;
     border-right: 1px solid black;
     border-bottom: 1px solid black;

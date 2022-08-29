@@ -88,12 +88,24 @@ section {
 /**Exibição de card com valor restante de memória**/
 .divRestante {
   background-color: #fff;
-  padding: 0.75em;
+  padding: 0.75em 1em;
+  display: none;
   position: absolute;
   border-radius: 0.75em 0.75em 0 0.75em;
   border: 1px solid black;
-  top: -30%;
-  right: 10%;
+  top: -40%;
+  right: 5%;
+}
+.divRestante strong output {
+  font-size: 2em;
+}
+.divRestante span {
+  font-size: 0.85em;
+  color: hsl(229deg, 7%, 55%);
+}
+
+.visible {
+  display: block;
 }
 
 .divRestante::after {
@@ -101,8 +113,8 @@ section {
   position: absolute;
   width: 1.25em;
   height: 1.25em;
-  bottom: -25.5%;
-  right: 2%;
+  bottom: -18.5%;
+  right: 1.5%;
   background: #fff;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
