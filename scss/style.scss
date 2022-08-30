@@ -98,15 +98,16 @@ section {
         border-radius: 1em;
     }
 
-    .divProgress progress::-webkit-progress-value
-    {
+    .divProgress progress::-webkit-progress-value {
         background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
         border-radius: .75em;
+        transition: all 1.5s;
     }
-    .divProgress progress::-webkit-progress-bar
-    {
+
+    .divProgress progress::-webkit-progress-bar {
         border-radius: .75em;
-        background:#132049;
+        background: #132049;
+
     }
 
 }
@@ -116,6 +117,7 @@ section {
 .divRestante {
     background-color: #fff;
     padding: .75em 1em;
+    opacity: 0;
     display: none;
     position: absolute;
     border-radius: .75em .75em 0 .75em;
@@ -135,6 +137,19 @@ section {
 
 .visible {
     display: block;
+    animation-name: exibir;
+    animation-duration: 1s;
+}
+
+
+@keyframes exibir {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .divRestante::after {
@@ -152,29 +167,33 @@ section {
 }
 
 @media screen and (min-width: 340px) and (max-width: 700px) {
-    body{
+    body {
         background-image: url("/Fylo/assets/img/bg-mobile.png");
-        background-size:cover;
+        background-size: cover;
     }
-    main{
+
+    main {
         flex-direction: column;
-        align-items:center;
+        align-items: center;
     }
-    .sectionLogo{
-        margin:0 0 1.5em 0;
+
+    .sectionLogo {
+        margin: 0 0 1.5em 0;
     }
-    .sectionProgress{
+
+    .sectionProgress {
         width: 17.5em;
 
-        .divRestante{
+        .divRestante {
             bottom: -40%;
-            top:auto;
+            top: auto;
             right: 11%;
             border-radius: .75em;
         }
-        .divRestante::after{
+
+        .divRestante::after {
             visibility: hidden;
         }
     }
-   
+
 }

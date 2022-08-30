@@ -21,11 +21,14 @@ function exibirValor(valor){
 function exibirRestante(size){
     const divRestante = document.querySelector('#divRestante');
     const outputRestante = divRestante.querySelector('#outputRestante');
-    outputRestante.innerText = 100 - size;
+    outputRestante.innerText = (100 - size).toFixed(2);
+
+    setTimeout(()=>{
+        divRestante.classList.add('visible');
+    },1500);
     
-    divRestante.classList.add('visible');
     setTimeout(()=>{
         divRestante.classList.remove('visible');
-    },3000);
+    },4500);
 
 }
