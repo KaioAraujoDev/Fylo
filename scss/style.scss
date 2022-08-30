@@ -18,7 +18,7 @@ body {
     font-size: 14px;
     width: 100vw;
     height: 100vh;
-    background:  url("../assets/img/bg-desktop.png") , $very-dark-blue;
+    background: url("../assets/img/bg-desktop.png"), $very-dark-blue;
     background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -115,17 +115,21 @@ section {
     border: 1px solid black;
     top: -40%;
     right: 5%;
-    strong output{
+
+    strong output {
         font-size: 2em;
     }
-    span{
+
+    span {
         font-size: .85em;
         color: $grayish-blue;
     }
 }
-.visible{
+
+.visible {
     display: block;
 }
+
 .divRestante::after {
     content: '';
     position: absolute;
@@ -136,6 +140,34 @@ section {
     background: #fff;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    transform:rotate(42deg);
+    transform: rotate(42deg);
 
+}
+
+@media screen and (min-width: 340px) and (max-width: 700px) {
+    body{
+        background-image: url("/Fylo/assets/img/bg-mobile.png");
+        background-size:cover;
+    }
+    main{
+        flex-direction: column;
+        align-items:center;
+    }
+    .sectionLogo{
+        margin:0 0 1.5em 0;
+    }
+    .sectionProgress{
+        width: 17.5em;
+
+        .divRestante{
+            bottom: -40%;
+            top:auto;
+            right: 11%;
+            border-radius: .75em;
+        }
+        .divRestante::after{
+            visibility: hidden;
+        }
+    }
+   
 }
