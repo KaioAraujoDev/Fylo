@@ -80,12 +80,16 @@ section {
 }
 .sectionProgress .divProgress progress {
   width: 100%;
-  background-color: yellow;
   -webkit-appearance: none;
   border-radius: 1em;
 }
 .sectionProgress .divProgress progress::-webkit-progress-value {
   background: linear-gradient(to right, hsl(6deg, 100%, 80%), hsl(335deg, 100%, 65%));
+  border-radius: 0.75em;
+}
+.sectionProgress .divProgress progress::-webkit-progress-bar {
+  border-radius: 0.75em;
+  background: #132049;
 }
 
 /**Exibição de card com valor restante de memória**/
