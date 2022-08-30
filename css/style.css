@@ -12,17 +12,19 @@ body {
   font-size: 14px;
   width: 100vw;
   height: 100vh;
-  background-color: hsl(229deg, 57%, 11%);
-}
-
-main {
-  background: url("../assets/img/bg-desktop.png") no-repeat bottom;
+  background: url("../assets/img/bg-desktop.png"), hsl(229deg, 57%, 11%);
+  background-position: bottom;
   background-size: contain;
-  width: 100%;
-  height: 100%;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 section {
@@ -31,9 +33,9 @@ section {
 
 .sectionLogo {
   padding: 2em;
-  border-radius: 1em 5em 1em 1em;
+  border-radius: 0.5em 5em 0.5em 0.5em;
   width: 17.5em;
-  margin-right: 5em;
+  margin-right: 2em;
 }
 .sectionLogo .divLogo {
   margin-bottom: 2em;
@@ -60,6 +62,7 @@ section {
 }
 .sectionProgress .labelValue {
   color: #fff;
+  font-size: 0.9em;
 }
 .sectionProgress .labelValue strong {
   margin: 0 0.25em;
